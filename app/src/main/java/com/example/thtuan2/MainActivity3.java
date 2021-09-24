@@ -1,5 +1,6 @@
 package com.example.thtuan2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.Fade;
 import android.view.View;
@@ -19,5 +20,15 @@ public class MainActivity3 extends AppCompatActivity {
         //below methods are used for adding enter and exit transition.
         getWindow().setEnterTransition(fade);
         getWindow().setExitTransition(fade);
+        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity2.class));
+
+                overridePendingTransition(R.anim.enter1_x, R.anim.exit1_x);
+
+
+            }
+        });
     }
 }
