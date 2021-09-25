@@ -1,4 +1,4 @@
-package com.example.thtuan2;
+package com.example.lap2_bai2;
 
 import org.junit.Test;
 

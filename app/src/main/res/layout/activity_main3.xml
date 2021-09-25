@@ -1,46 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="
-#C8EDFE"
+    app:layoutDescription="@xml/activity_main3_scene"
     tools:context=".MainActivity3">
-
-    <ImageView
-        android:id="@+id/hoatim"
+    <View
+        android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
-        android:transitionName="fade"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hoa" />
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <TextView
-        android:id="@+id/textView33"
-        android:layout_width="324dp"
-        android:layout_height="178dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="The word “carnival” derives from the Latin “carnelevare” meaning “to take out the meat”. The medieval Church banished meat from the table during the whole period of Lent, as it did with sugar, ingredients containing fat, eggs and dairy products. "
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hoatim" />
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love Story-Taylor Swift"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="55dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="298dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="20dp"
-        android:text="Back"
-        app:backgroundTint="#FF5722"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We were both young when I first saw you
+I close my eyes and the flashback starts
+I'm standin' there
+On a balcony in summer air
+See the lights, see the party, the ball gowns
+See you make your way through the crowd
+And say, Hello
+Little did I know
+That you were Romeo, you were throwin' pebbles
+And my daddy said, Stay away from Juliet
+And I was cryin' on the staircase
+Beggin' you, Please don't go,  and I said
+Romeo, take me somewhere we can be alone
+"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eclipse"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/g9"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/v1"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/g8"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qt"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tien"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="533dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stop"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love Story-Taylor Swift"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="672dp" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
